@@ -36,6 +36,7 @@ python3 -c "import tensorrt; print(tensorrt.__version__)"
 
 ---
 
+```txt
 TensorRT-Tutorial
 ├─ post-trt/
 │ ├─ CMakeLists.txt
@@ -49,6 +50,8 @@ TensorRT-Tutorial
 ├─ simple_nn.trt (예시 엔진 파일; 필요 시 .gitignore에서 제외)
 ├─ simple_nn.onnx (예시 ONNX 파일)
 └─ build/ (cmake 빌드 폴더)
+
+```
 - post-trt: C++에서 ONNX를 직접 파싱하여 엔진을 만드는 구조
 
 - pre-trt: 미리 .trt 엔진을 만들어두고, C++에서 로드(deserialize)하는 구조
