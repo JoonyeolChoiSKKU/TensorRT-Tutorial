@@ -1,0 +1,37 @@
+# -------------------------
+# General OS/Editor/IDE files
+# -------------------------
+*.DS_Store
+*.swp
+*.swo
+*.log
+*.tmp
+
+# Visual Studio Code / JetBrains 등 IDE 설정 폴더(필요시)
+.vscode/
+.idea/
+
+# -------------------------
+# CMake & Build artifacts
+# -------------------------
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# (만약 post-trt나 pre-trt 폴더 내 build 디렉토리도 무시하려면 하위경로 명시)
+post-trt/build/
+pre-trt/build/
+
+# -------------------------
+# TensorRT / ONNX files
+# -------------------------
+*.trt
+*.onnx
+
+# -------------------------
+# Python bytecode
+# -------------------------
+__pycache__/
+*.pyc
