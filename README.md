@@ -18,16 +18,16 @@
 2. **TensorRT 패키지 설치**  
    ```bash
    sudo apt-get install tensorrt libnvinfer10 libnvinfer-dev python3-libnvinfer
-```
+   ```
 
-- 필요한 경우, libnvinfer-plugin-dev, libnvinfer-bin, python3-libnvinfer-dev 등도 설치 가능합니다.
+   - 필요한 경우, libnvinfer-plugin-dev, libnvinfer-bin, python3-libnvinfer-dev 등도 설치 가능합니다.
  
-1. **버전 확인** 
+3. **버전 확인** 
 
-```bash
-dpkg -l | grep nvinfer
-python3 -c "import tensorrt; print(tensorrt.__version__)"
-```
+   ```bash
+   dpkg -l | grep nvinfer
+   python3 -c "import tensorrt; print(tensorrt.__version__)"
+   ```
 
   - 여기서 Python과 C++(dpkg) 버전이 일치해야 엔진 호환 문제를 피할 수 있습니다.
 
